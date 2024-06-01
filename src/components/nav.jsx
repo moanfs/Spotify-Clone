@@ -5,15 +5,7 @@ import { MdDownloading } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Nav = ({scrollPosition}) =>{
-    // const location = useLocation();
-    // const history = useHistory();
-
-    // const isBackActive = () => {
-    //     // Jika riwayat navigasi tidak kosong dan lokasi saat ini bukan "/" (beranda), maka "Back" aktif
-    //     return history.length > 1 && location.pathname !== "/";
-    //   };
-
-      
+     
     function classNames(...classes) {
         return classes.filter(Boolean).join(" ");
     }
