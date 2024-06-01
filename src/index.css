@@ -3,21 +3,24 @@
 @tailwind utilities;
 
 
-.content{
-  background-image: linear-gradient(#1E1E1E,#121212);
+::-webkit-scrollbar {
+    width: 12px;
+   
+  }
+    
+::-webkit-scrollbar-thumb {
+    background: #595959; 
+    border-radius:  0 5px 5px 0;
+    
 }
-/* .sidebar{
-  color: #fff;
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #636363;  
+    
 }
 
-.side-menu a i{
-  font-size: 1.6rem;
-  align-items: center;
-}
 
-
-.content{
-  background-color: #121212;
-  color: #fff;
-} */
+/* .flex-item:nth-of-type(1) { flex-grow: 1; }
+.flex-item:nth-of-type(2) { flex-grow: 2; }
+.flex-item:nth-of-type(3) { flex-grow: 1; } */
 

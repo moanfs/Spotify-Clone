@@ -6,7 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-
+      flexGrow: {
+        2: '2',
+        3: '3',
+        // 4: '4',
+      }
     },
   },
   plugins: [],
