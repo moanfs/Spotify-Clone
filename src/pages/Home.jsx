@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import Section from "../components/section";
 import Main from "../layouts/main";
 import {getNewReleases, getFeaturedPlaylists, getCategories} from "../services/spotifyService"
+import CardCategories from '../components/card/cardCategories';
+import CardPlaylists from "../components/card/cardPlaylists"
+import CardAlbums from '../components/card/cardAlbums';
 
 const Home = () =>{
     const [newReleases, setNewReleases] = useState([]);
@@ -35,8 +38,20 @@ const Home = () =>{
     return(
         <div className="h-screen max-h-screen w-screen bg-black">
             <Main>
+                <Section titleCard='Categories'>
+                    <CardCategories data={categories}/>
+                </Section>
+                
+                <Section titleCard="New Releases">
+                    <CardAlbums data={newReleases}/>
+                </Section>
 
-                <Section 
+                <Section titleCard='Featured Playlists'>
+                    <CardPlaylists data={featuredPlaylists}/>
+                </Section>
+                
+
+                {/* <Section 
                 title="Categories" 
                 data={categories}
                 cardTitleClass="text-center" 
@@ -53,7 +68,7 @@ const Home = () =>{
                 title="Featured Playlists" 
                 data={featuredPlaylists}
                 categorieUrl={`playlist`} 
-                />
+                /> */}
     
             </Main>
         </div>
